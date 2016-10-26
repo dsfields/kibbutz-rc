@@ -1,0 +1,36 @@
+{
+  "name": "kibbutz-rc",
+  "longName": "Kibbutz RC Plugin",
+  "version": "1.0.0",
+  "dependencies": {
+    "elv": "^1.0.1",
+    "rc": "^1.1.6"
+  },
+  "devDependencies": {
+    "chai": "~3.5.0",
+    "istanbul": "~0.4.2",
+    "mocha": "~2.4.5"
+  },
+  "peerDependencies": {
+    "kibbutz": ">= 1.x"
+  },
+  "keywords": [
+    "config",
+    "configuration",
+    "multi",
+    "source",
+    "loader",
+    "rc",
+    "consul"
+  ],
+  "main": "./lib/provider",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dsfields/kibbutz-rc"
+  },
+  "scripts": {
+    "lint": "eslint ./**/*.js",
+    "test": "NODE_ENV=test istanbul cover _mocha tests/unit/**/*.js"
+  }
+}
